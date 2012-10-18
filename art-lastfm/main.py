@@ -1,0 +1,27 @@
+'''
+Created on 18/10/2012
+
+@author: WilliamM
+'''
+import autopy as ap
+from autopy.mouse import LEFT_BUTTON
+import time as t
+
+def mosmid():
+    ap.mouse.smooth_move(380,250)
+    t.sleep(.1)
+    print "Mouse Moved"
+    
+def mosclk():
+    ap.mouse.click(LEFT_BUTTON)
+    t.sleep(1)
+    
+    
+def movfrd():
+    ap.key.tap('w', True)
+    t.sleep(5)
+    ap.key.tap('w', False)
+
+mosmid()
+mosclk()
+movfrd()
