@@ -1,0 +1,18 @@
+'''
+Created on 18/10/2012
+
+@author: WilliamM
+'''
+import autopy as ap
+import time as t
+
+def mosmid():
+    ap.mouse.smooth_move(600,50)
+    print "Mouse Moved"
+
+def movforward():
+    ap.key.toggle('w', True)
+    t.sleep(1)
+    ap.key.toggle('w', False)
+
+mosmid()

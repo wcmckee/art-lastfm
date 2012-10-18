@@ -1,0 +1,9 @@
+'''
+Created on 18/10/2012
+
+@author: WilliamM
+'''
+import autopy as ap
+
+def movforward:
+ap.key.toggle('w' True)
